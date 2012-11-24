@@ -132,6 +132,8 @@ public class Classes
     }
 
 
+    private final lxl.List<String> names = new lxl.ArrayList();
+
     private final Class service;
 
     private final String name;
@@ -164,6 +166,9 @@ public class Classes
     }
     public final String getName(){
         return this.name;
+    }
+    public final lxl.List<String> getNames(){
+        return this.names;
     }
     /**
      * Called from constructor.
@@ -204,6 +209,7 @@ public class Classes
                     line = line.substring(0,comment);
                 line = line.trim();
                 if (0 != line.length()){
+                    this.names.add(line);
                     try {
                         Class clas = Class.forName(line);
                         if (!this.contains(clas)){
