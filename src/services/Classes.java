@@ -132,11 +132,11 @@ public class Classes
     }
 
 
-    private final lxl.List<String> names = new lxl.ArrayList();
+    public final lxl.List<String> names = new lxl.ArrayList();
 
-    private final Class service;
+    public final Class service;
 
-    private final String name;
+    public final String name;
 
 
     public Classes(Class service){
