@@ -1,7 +1,11 @@
 
-    services.Services
+    services.Classes
 
         A services resource reader that intializes classes
+
+    services.Names
+
+        A services resource reader that reads class names
 
     Resource
 

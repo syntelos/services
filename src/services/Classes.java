@@ -1,6 +1,6 @@
 /*
- * Gap Data
- * Copyright (C) 2009 John Pritchard
+ * Services
+ * Copyright (C) 2012 John Pritchard
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -52,13 +52,13 @@ import java.util.logging.LogRecord;
  * 
  * @author jdp
  */
-public class Services
+public class Classes
     extends lxl.ArrayList<Class>
 {
     public final static String NamePrefix_JAR = "META-INF/services/";
     public final static String NamePrefix_WAR = "WEB-INF/services/";
 
-    protected final static Logger Log = Logger.getLogger(Services.class.getName());
+    protected final static Logger Log = Logger.getLogger(Classes.class.getName());
 
     public static lxl.List<String> Read(Class service)
         throws IOException
@@ -137,7 +137,7 @@ public class Services
     private final String name;
 
 
-    public Services(Class service){
+    public Classes(Class service){
         super();
         if (null != service){
             this.service = service;
@@ -226,7 +226,7 @@ public class Services
      * Indempotent initializer will get called more than once, but
      * should only eval once.
      */
-    public Services init(){
+    public Classes init(){
         return this;
     }
 }
