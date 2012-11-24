@@ -1,6 +1,6 @@
 /*
  * Services
- * Copyright (C) 2009 John Pritchard
+ * Copyright (C) 2012 John Pritchard
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
